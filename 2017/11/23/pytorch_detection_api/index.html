@@ -79,12 +79,16 @@
 
 
 
-<meta property="og:type" content="website">
+<meta name="description" content="utilsutils.basic_op###utils.basic_op.variable_to_numpy(v) Convert Variable v to numpy format. Parameters:  v (Variable) – the input Variable.  Examples: 12v = V">
+<meta property="og:type" content="article">
 <meta property="og:title" content="pytorch_detection_api">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/11/23/pytorch_detection_api/index.html">
 <meta property="og:site_name" content="pytorch_detection_api">
+<meta property="og:description" content="utilsutils.basic_op###utils.basic_op.variable_to_numpy(v) Convert Variable v to numpy format. Parameters:  v (Variable) – the input Variable.  Examples: 12v = Variable(torch.randn(2,3))ouput = utils.b">
+<meta property="og:updated_time" content="2017-11-23T11:12:42.859Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="pytorch_detection_api">
+<meta name="twitter:description" content="utilsutils.basic_op###utils.basic_op.variable_to_numpy(v) Convert Variable v to numpy format. Parameters:  v (Variable) – the input Variable.  Examples: 12v = Variable(torch.randn(2,3))ouput = utils.b">
 
 
 
@@ -114,13 +118,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/11/23/pytorch_detection_api/"/>
 
 
 
 
 
-  <title>pytorch_detection_api</title>
+  <title>pytorch_detection_api | pytorch_detection_api</title>
   
 
 
@@ -139,8 +143,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -213,9 +216,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -245,9 +248,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/11/23/pytorch_detection_api/" itemprop="url">pytorch_detection_api</a></h1>
+          <h1 class="post-title" itemprop="name headline">pytorch_detection_api</h1>
         
 
         <div class="post-meta">
@@ -297,9 +298,7 @@
       
 
       
-        
-          
-            <h1 id="utils"><a href="#utils" class="headerlink" title="utils"></a>utils</h1><h2 id="utils-basic-op"><a href="#utils-basic-op" class="headerlink" title="utils.basic_op"></a>utils.basic_op</h2><p>###utils.basic_op.variable_to_numpy(<em>v</em>)</p>
+        <h1 id="utils"><a href="#utils" class="headerlink" title="utils"></a>utils</h1><h2 id="utils-basic-op"><a href="#utils-basic-op" class="headerlink" title="utils.basic_op"></a>utils.basic_op</h2><p>###utils.basic_op.variable_to_numpy(<em>v</em>)</p>
 <p>Convert Variable v to numpy format.</p>
 <p><strong>Parameters:</strong></p>
 <ul>
@@ -688,8 +687,6 @@
 <p>Example:</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">feature = vgg(img)</span><br><span class="line">cls_branch = Conv2d(<span class="number">512</span>, <span class="number">18</span>, <span class="number">1</span>, relu=<span class="keyword">False</span>)</span><br><span class="line">reg_branch = Conv2d(<span class="number">512</span>, <span class="number">36</span>, <span class="number">1</span>, relu=<span class="keyword">False</span>)</span><br><span class="line">conv_detector = modules.detector.ConvDetector([<span class="number">32</span>,<span class="number">32</span>], <span class="number">1</span>, cls_branch, reg_branch)</span><br><span class="line">output = conv_detector(feature, training_label)</span><br></pre></td></tr></table></figure>
 
-          
-        
       
     </div>
     
@@ -706,140 +703,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/23/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="suoluowan">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="pytorch_detection_api">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/11/23/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-23T17:31:39+08:00">
-                2017-11-23
-              </time>
+              <a href="/2017/11/23/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -849,10 +734,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -860,6 +746,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -880,8 +770,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -925,6 +824,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#utils"><span class="nav-number">1.</span> <span class="nav-text">utils</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#utils-basic-op"><span class="nav-number">1.1.</span> <span class="nav-text">utils.basic_op</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#utils-basic-op-numpy-to-tensor-n-device-id"><span class="nav-number">1.1.1.</span> <span class="nav-text">utils.basic_op.numpy_to_tensor(n, device_id)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#utils-basic-op-anything-to-numpy-input-object"><span class="nav-number">1.1.2.</span> <span class="nav-text">utils.basic_op.anything_to_numpy(input_object)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#utils-basic-op-get-whctrs-bboxes"><span class="nav-number">1.1.3.</span> <span class="nav-text">utils.basic_op.get_whctrs(bboxes)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#utils-basic-op-whctrs-to-bboxes-ws-hs-ctr-xs-ctr-ys"><span class="nav-number">1.1.4.</span> <span class="nav-text">utils.basic_op.whctrs_to_bboxes(ws, hs, ctr_xs, ctr_ys)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#utils-basic-op-reg-bboxes-bboxes-deltas"><span class="nav-number">1.1.5.</span> <span class="nav-text">utils.basic_op.reg_bboxes(bboxes, deltas)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#utils-basic-op-get-reg-delta-bboxes-gt-bboxes"><span class="nav-number">1.1.6.</span> <span class="nav-text">utils.basic_op.get_reg_delta(bboxes, gt_bboxes)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#utils-basic-op-border-clip"><span class="nav-number">1.1.7.</span> <span class="nav-text">utils.basic_op.border_clip</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#utils-basic-op-reroll-select-op-list"><span class="nav-number">1.1.8.</span> <span class="nav-text">utils.basic_op.reroll(select_op_list)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#utils-basic-op-is-empty-input-object"><span class="nav-number">1.1.9.</span> <span class="nav-text">utils.basic_op.is_empty(input_object)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#utils-basic-op-xyxy-to-xywh-bboxes-is-copy-False"><span class="nav-number">1.1.10.</span> <span class="nav-text">utils.basic_op.xyxy_to_xywh(bboxes, is_copy=False)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#utils-filter-op"><span class="nav-number">1.2.</span> <span class="nav-text">utils.filter_op</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#utils-filter-op-size-filter-bboxes-threshs"><span class="nav-number">1.2.1.</span> <span class="nav-text">utils.filter_op.size_filter(bboxes, threshs)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#utils-filter-op-ratio-filter-bboxes-threshs"><span class="nav-number">1.2.2.</span> <span class="nav-text">utils.filter_op.ratio_filter(bboxes, threshs)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#utils-filter-op-border-filter-bboxes-threshs"><span class="nav-number">1.2.3.</span> <span class="nav-text">utils.filter_op.border_filter(bboxes, threshs)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#utils-filter-op-hard-fg-filter-bboxes-hard-fgs-thresh"><span class="nav-number">1.2.4.</span> <span class="nav-text">utils.filter_op.hard_fg_filter(bboxes, hard_fgs, thresh)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#utils-filter-op-dont-care-filter-bboxes-dont-care-areas-thresh"><span class="nav-number">1.2.5.</span> <span class="nav-text">utils.filter_op.dont_care_filter(bboxes, dont_care_areas, thresh)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#utils-filter-op-nms-filter-bboxes-scores-thresh-is-sorted-False"><span class="nav-number">1.2.6.</span> <span class="nav-text">utils.filter_op.nms_filter(bboxes, scores, thresh, is_sorted=False)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#utils-generate-bboxes"><span class="nav-number">1.3.</span> <span class="nav-text">utils.generate_bboxes</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#utils-overlap-bbox-iou-bboxes-a-bboxes-b"><span class="nav-number">1.3.1.</span> <span class="nav-text">utils.overlap.bbox_iou(bboxes_a, bboxes_b)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#utils-overlap-bbox-i-bboxes-a-bboxes-b"><span class="nav-number">1.3.2.</span> <span class="nav-text">utils.overlap.bbox_i(bboxes_a, bboxes_b)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#utils-overlap-bbox-u-bboxes-a-bboxes-b-i-None"><span class="nav-number">1.3.3.</span> <span class="nav-text">utils.overlap.bbox_u(bboxes_a, bboxes_b, i=None)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#utils-overlap-bbox-area-bboxes"><span class="nav-number">1.3.4.</span> <span class="nav-text">utils.overlap.bbox_area(bboxes)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#utils-overlap-bbox-ioa-bboxes-a-bboxes-b"><span class="nav-number">1.3.5.</span> <span class="nav-text">utils.overlap.bbox_ioa(bboxes_a, bboxes_b)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#utils-parse-dataset"><span class="nav-number">1.4.</span> <span class="nav-text">utils.parse_dataset</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#utils-parse-dataset-get-item-training-label-item-name-unpack-dim"><span class="nav-number">1.4.1.</span> <span class="nav-text">utils.parse_dataset.get_item(training_label, item_name, unpack_dim)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#utils-parse-dataset-get-easy-fgs-training-label"><span class="nav-number">1.4.2.</span> <span class="nav-text">utils.parse_dataset.get_easy_fgs(training_label)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#utils-parse-dataset-get-hard-fgs-training-label"><span class="nav-number">1.4.3.</span> <span class="nav-text">utils.parse_dataset.get_hard_fgs(training_label)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#utils-select-fg-bg"><span class="nav-number">1.5.</span> <span class="nav-text">utils.select_fg_bg</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#models"><span class="nav-number">2.</span> <span class="nav-text">models</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#models-rpn"><span class="nav-number">2.1.</span> <span class="nav-text">models.rpn</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#modules"><span class="nav-number">3.</span> <span class="nav-text">modules</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#modules-detector"><span class="nav-number">3.1.</span> <span class="nav-text">modules.detector</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1058,6 +973,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
