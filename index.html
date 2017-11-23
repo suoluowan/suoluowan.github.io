@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html class="theme-next gemini use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -93,7 +93,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Pisces',
+    scheme: 'Gemini',
     version: '5.1.3',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -307,8 +307,7 @@
 </ul>
 <p>Examples:</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">v = Variable(torch.randn(<span class="number">2</span>,<span class="number">3</span>))</span><br><span class="line">ouput = utils.basic_op.variable_to_numpy(v)</span><br></pre></td></tr></table></figure>
-<p>###utils.basic_op.numpy_to_variable(<em>n, device_id</em>)</p>
-<p>Convert numpy n to Variable format.</p>
+<h3 id="utils-basic-op-numpy-to-variable-n-device-id"><a href="#utils-basic-op-numpy-to-variable-n-device-id" class="headerlink" title="utils.basic_op.numpy_to_variable(n, device_id)"></a>utils.basic_op.numpy_to_variable(<em>n, device_id</em>)</h3><p>Convert numpy n to Variable format.</p>
 <p><strong>Parameters:</strong></p>
 <ul>
 <li><strong>n</strong> (<em>numpy</em>) – the input numpy.</li>
@@ -316,8 +315,7 @@
 </ul>
 <p>Example:</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># return a variable with cuda</span></span><br><span class="line">n = numpy.array([[<span class="number">1</span>,<span class="number">2</span>],[<span class="number">3</span>,<span class="number">4</span>]])</span><br><span class="line">output = utils.basic_op.numpy_to_variable(n, <span class="number">0</span>)</span><br><span class="line"><span class="comment"># return a variable without cuda</span></span><br><span class="line">output = utils.basic_op.numpy_to_variable(n, <span class="number">-1</span>)</span><br></pre></td></tr></table></figure>
-<p>###utils.basic_op.tensor_to_numpy(<em>t</em>)</p>
-<p>Convert Tensor t to numpy format.</p>
+<h3 id="utils-basic-op-tensor-to-numpy-t"><a href="#utils-basic-op-tensor-to-numpy-t" class="headerlink" title="utils.basic_op.tensor_to_numpy(t)"></a>utils.basic_op.tensor_to_numpy(<em>t</em>)</h3><p>Convert Tensor t to numpy format.</p>
 <p><strong>Parameters:</strong></p>
 <ul>
 <li><strong>t</strong> (<em>Tensor</em>) – the input tensor.</li>
@@ -482,8 +480,7 @@
 <ul>
 <li><strong>keep_ids</strong> (<em>list M</em>) – BBoxes after no-maximum suppression.</li>
 </ul>
-<h2 id="utils-generate-bboxes"><a href="#utils-generate-bboxes" class="headerlink" title="utils.generate_bboxes"></a>utils.generate_bboxes</h2><p>###utils.generate_bboxes.generate_bboxes(<em>width, height, feature_stride, base_size=16, bbox_ratio=[0.5,1,2], bbox_scale=[2,3,4]</em>)</p>
-<p>Generate all bboxes based on given conv feature size.</p>
+<h2 id="utils-generate-bboxes"><a href="#utils-generate-bboxes" class="headerlink" title="utils.generate_bboxes"></a>utils.generate_bboxes</h2><h3 id="utils-generate-bboxes-generate-bboxes-width-height-feature-stride-base-size-16-bbox-ratio-0-5-1-2-bbox-scale-2-3-4"><a href="#utils-generate-bboxes-generate-bboxes-width-height-feature-stride-base-size-16-bbox-ratio-0-5-1-2-bbox-scale-2-3-4" class="headerlink" title="utils.generate_bboxes.generate_bboxes(width, height, feature_stride, base_size=16, bbox_ratio=[0.5,1,2], bbox_scale=[2,3,4])"></a>utils.generate_bboxes.generate_bboxes(<em>width, height, feature_stride, base_size=16, bbox_ratio=[0.5,1,2], bbox_scale=[2,3,4]</em>)</h3><p>Generate all bboxes based on given conv feature size.</p>
 <p><strong>Parameters:</strong></p>
 <ul>
 <li><strong>width</strong> (<em>int</em>) – The width of given conv feature.</li>
@@ -493,8 +490,7 @@
 <li><strong>bbox_ratios</strong> (<em>list</em>) – A list of bboxes ratios.</li>
 <li><strong>bbox_scales</strong> (<em>list</em>) – A list of bboxes scales.</li>
 </ul>
-<p>##utils.overlap</p>
-<h3 id="utils-overlap-bbox-iou-bboxes-a-bboxes-b"><a href="#utils-overlap-bbox-iou-bboxes-a-bboxes-b" class="headerlink" title="utils.overlap.bbox_iou(bboxes_a, bboxes_b)"></a>utils.overlap.bbox_iou(<em>bboxes_a, bboxes_b</em>)</h3><p>Compute iou between bboxes_a and bboxes_b.</p>
+<h2 id="utils-overlap"><a href="#utils-overlap" class="headerlink" title="utils.overlap"></a>utils.overlap</h2><h3 id="utils-overlap-bbox-iou-bboxes-a-bboxes-b"><a href="#utils-overlap-bbox-iou-bboxes-a-bboxes-b" class="headerlink" title="utils.overlap.bbox_iou(bboxes_a, bboxes_b)"></a>utils.overlap.bbox_iou(<em>bboxes_a, bboxes_b</em>)</h3><p>Compute iou between bboxes_a and bboxes_b.</p>
 <p><strong>Parameters:</strong></p>
 <ul>
 <li><strong>bboxes_a</strong> (<em>np array A x 4</em>) – Input bboxes a.</li>
@@ -544,8 +540,7 @@
 <ul>
 <li>Return intersection/area(a) between bboxes a and b (<em>np array A x B</em>).</li>
 </ul>
-<p>###utils.overlap.bbox_iob(<em>bboxes_a, bboxes_b</em>)</p>
-<p>Compute intersection/area(b) between bboxes_a and bboxes_b.</p>
+<h3 id="utils-overlap-bbox-iob-bboxes-a-bboxes-b"><a href="#utils-overlap-bbox-iob-bboxes-a-bboxes-b" class="headerlink" title="utils.overlap.bbox_iob(bboxes_a, bboxes_b)"></a>utils.overlap.bbox_iob(<em>bboxes_a, bboxes_b</em>)</h3><p>Compute intersection/area(b) between bboxes_a and bboxes_b.</p>
 <p><strong>Parameters:</strong></p>
 <ul>
 <li><strong>bboxes_a</strong> (<em>np array A x 4</em>) – Input bboxes a.</li>
@@ -587,8 +582,7 @@
 <ul>
 <li><strong>hard_fgs</strong> (<em>any type</em>) – hard foregrounds.</li>
 </ul>
-<p>###get_dont_care_areas(<em>training_label</em>)</p>
-<p>Get dont care area from training_label.</p>
+<h3 id="get-dont-care-areas-training-label"><a href="#get-dont-care-areas-training-label" class="headerlink" title="get_dont_care_areas(training_label)"></a>get_dont_care_areas(<em>training_label</em>)</h3><p>Get dont care area from training_label.</p>
 <p><strong>Parameters:</strong></p>
 <ul>
 <li><strong>training_label</strong> (<em>dict</em>) – Training label.</li>
@@ -597,8 +591,7 @@
 <ul>
 <li>Return don’t care area of training label.</li>
 </ul>
-<h2 id="utils-select-fg-bg"><a href="#utils-select-fg-bg" class="headerlink" title="utils.select_fg_bg"></a>utils.select_fg_bg</h2><p>###utils.select_fg_bg.select_fg_bg(<em>bboxes, gt_bboxes, gt_cat_ids, fg_rate, bboxes_per_img, fg_threshs, bg_threshs</em>)</p>
-<p>Select foregrounds and backgrounds from bboxes.</p>
+<h2 id="utils-select-fg-bg"><a href="#utils-select-fg-bg" class="headerlink" title="utils.select_fg_bg"></a>utils.select_fg_bg</h2><h3 id="utils-select-fg-bg-select-fg-bg-bboxes-gt-bboxes-gt-cat-ids-fg-rate-bboxes-per-img-fg-threshs-bg-threshs"><a href="#utils-select-fg-bg-select-fg-bg-bboxes-gt-bboxes-gt-cat-ids-fg-rate-bboxes-per-img-fg-threshs-bg-threshs" class="headerlink" title="utils.select_fg_bg.select_fg_bg(bboxes, gt_bboxes, gt_cat_ids, fg_rate, bboxes_per_img, fg_threshs, bg_threshs)"></a>utils.select_fg_bg.select_fg_bg(<em>bboxes, gt_bboxes, gt_cat_ids, fg_rate, bboxes_per_img, fg_threshs, bg_threshs</em>)</h3><p>Select foregrounds and backgrounds from bboxes.</p>
 <p><strong>Parameters:</strong></p>
 <ul>
 <li><strong>bboxes</strong> (<em>np array N x 4</em>) – Input bboxes.</li>
@@ -617,8 +610,7 @@
 <li><strong>reg_weights</strong> (<em>np array M x 4</em>) – Weights of bboxes.</li>
 <li><strong>fg_num</strong> (<em>int</em>) – Number of foreground.</li>
 </ul>
-<h1 id="models"><a href="#models" class="headerlink" title="models"></a>models</h1><h2 id="models-rpn"><a href="#models-rpn" class="headerlink" title="models.rpn"></a>models.rpn</h2><p>###class models.rpn.RPN</p>
-<p><strong>(<em>img_size, cls_loss_weight = 1, reg_loss_weight = 1, cls_criterion = F.cross_entropy,  reg_criterion = F.smooth_l1_loss, cls_criterion_args = None, reg_criterion_args = {‘size_average’: False}, feature_stride = 16, bbox_base = 16, bbox_ratios = [0.5, 1, 2], bbox_scales = [8, 16, 32], fg_rate = 0.25, bboxes_per_img = 128, size_threshs = [20, sys.maxint], ratio_threshs = [0.2, 5], hard_fg_thresh = 0.5, dont_care_thresh = 0.3, fg_threshs = [0.5, 1.1], bg_threshs = [0.1, 0.3], debug_level = 0</em>)</strong></p>
+<h1 id="models"><a href="#models" class="headerlink" title="models"></a>models</h1><h2 id="models-rpn"><a href="#models-rpn" class="headerlink" title="models.rpn"></a>models.rpn</h2><h3 id="class-models-rpn-RPN"><a href="#class-models-rpn-RPN" class="headerlink" title="class models.rpn.RPN"></a>class models.rpn.RPN</h3><p><strong>(<em>img_size, cls_loss_weight = 1, reg_loss_weight = 1, cls_criterion = F.cross_entropy,  reg_criterion = F.smooth_l1_loss, cls_criterion_args = None, reg_criterion_args = {‘size_average’: False}, feature_stride = 16, bbox_base = 16, bbox_ratios = [0.5, 1, 2], bbox_scales = [8, 16, 32], fg_rate = 0.25, bboxes_per_img = 128, size_threshs = [20, sys.maxint], ratio_threshs = [0.2, 5], hard_fg_thresh = 0.5, dont_care_thresh = 0.3, fg_threshs = [0.5, 1.1], bg_threshs = [0.1, 0.3], debug_level = 0</em>)</strong></p>
 <p>Apply RPN over input images.</p>
 <p><strong>Parameters:</strong></p>
 <ul>
@@ -649,8 +641,7 @@
 </ul>
 <p>Example:</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rpn = models.rpn.RPN([<span class="number">32</span>,<span class="number">32</span>])</span><br><span class="line">inputs, labels = data</span><br><span class="line">output = rpn(inputs)</span><br></pre></td></tr></table></figure>
-<h1 id="modules"><a href="#modules" class="headerlink" title="modules"></a>modules</h1><h2 id="modules-detector"><a href="#modules-detector" class="headerlink" title="modules.detector"></a>modules.detector</h2><p>###class modules.detector.ConvDetector</p>
-<p><strong>(<em>img_size, class_num, cls_branch, reg_branch, cls_loss_weight = 1, reg_loss_weight = 1, cls_criterion = F.cross_entropy,  reg_criterion = F.smooth_l1_loss, cls_criterion_args = None, reg_criterion_args = {‘size_average’: False}, feature_stride = 16, bbox_base = 16, bbox_ratios = [0.5, 1, 2], bbox_scales = [8, 16, 32], fg_rate = 0.25, bboxes_per_img = 128, size_threshs = [20, sys.maxint], ratio_threshs = [0.2, 5], hard_fg_thresh = 0.5, dont_care_thresh = 0.3, fg_threshs = [0.5, 1.1], bg_threshs = [0.1, 0.3], debug_level = 0</em>)</strong></p>
+<h1 id="modules"><a href="#modules" class="headerlink" title="modules"></a>modules</h1><h2 id="modules-detector"><a href="#modules-detector" class="headerlink" title="modules.detector"></a>modules.detector</h2><h3 id="class-modules-detector-ConvDetector"><a href="#class-modules-detector-ConvDetector" class="headerlink" title="class modules.detector.ConvDetector"></a>class modules.detector.ConvDetector</h3><p><strong>(<em>img_size, class_num, cls_branch, reg_branch, cls_loss_weight = 1, reg_loss_weight = 1, cls_criterion = F.cross_entropy,  reg_criterion = F.smooth_l1_loss, cls_criterion_args = None, reg_criterion_args = {‘size_average’: False}, feature_stride = 16, bbox_base = 16, bbox_ratios = [0.5, 1, 2], bbox_scales = [8, 16, 32], fg_rate = 0.25, bboxes_per_img = 128, size_threshs = [20, sys.maxint], ratio_threshs = [0.2, 5], hard_fg_thresh = 0.5, dont_care_thresh = 0.3, fg_threshs = [0.5, 1.1], bg_threshs = [0.1, 0.3], debug_level = 0</em>)</strong></p>
 <p>Apply detector over feature map.</p>
 <p><strong>Parameters:</strong></p>
 <ul>
@@ -829,7 +820,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.3</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.3</div>
 
 
 
