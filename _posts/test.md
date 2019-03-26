@@ -2,7 +2,7 @@
 layout: post
 title:  "Test!"
 subtitle: "Just a test!"
-date:   2017-06-26 
+date:   2019-03-26 
 categories: [object-detection]
 ---
 
