@@ -24,12 +24,12 @@ title:                 suoluowan
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  "Junyao Sun's blog for computer vision".
+  Junyao Sun's blog for computer vision.
 
 
 # A shorter description for the sidebar.
 tagline:               >
-  "Junyao Sun's blog for computer vision".
+  Junyao Sun's blog for computer vision.
 
 # A list of keywords for your blog
 keywords:              []
