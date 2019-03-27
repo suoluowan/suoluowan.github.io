@@ -1,18 +1,8 @@
 ---
-layout: page
-title: Blog
-subtitle: JunyaoSun' blog for computer vision
-sitemap:
-  priority: 0.9
+layout: blog
+title: Home
+description: >
+  The official Hydejack blog. Version updates, example content and how-to guides on how to blog with Jekyll.
+  Open `index.html` to edit this text.
+cover: true
 ---
-
-<ul class="list-posts">
-    {% for post in site.posts %}
-        <li class="post-teaser">
-            <a href="{{ post.url | prepend: site.baseurl }}">
-                <span class="post-teaser__title">{{ post.title }}</span>
-                <span class="post-teaser__date">{{ post.date | date: "%d %B %Y" }}</span>
-            </a>
-        </li>
-    {% endfor %}
-</ul>
