@@ -1,2 +1,4 @@
-- slug: object-detection
-  name: Object Detection
+- slug: paper
+  name: Paper
+- slug: code
+  name: Code
