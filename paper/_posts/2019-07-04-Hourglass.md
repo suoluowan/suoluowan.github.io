@@ -65,13 +65,13 @@ In conjunction with the use of intermediate supervision, repeated bidirectional 
 # Related Work
 
 + DeepPose： 第一个在姿势估计中使用深度网络；直接回归关节坐标
-+  [15]：使用heatmaps（可能是第一个），输入多尺度图像来获取多尺度信息。
++  [1]：使用heatmaps（可能是第一个），输入多尺度图像来获取多尺度信息。
 
 ---
 
 本文的网络设计很大程度上基于[15]，探索如何获取多尺度信息，并对该网络做了改进以组合多分辨率的特征
 
-[15] 联合使用了卷积网络和图模型，使用图模型学习关节之间的空间关系。但本文在不使用图模型或者任何人体显式模型的情况下达到更好的性能。
+[1] 联合使用了卷积网络和图模型，使用图模型学习关节之间的空间关系。但本文在不使用图模型或者任何人体显式模型的情况下达到更好的性能。
 
 > 意味着本文使用其他方法学习关节之间的空间关系？使用什么方法？
 
@@ -79,13 +79,13 @@ In conjunction with the use of intermediate supervision, repeated bidirectional 
 
 making successive predictions for pose estimation：
 
-+ [19]：使用Iterative Error Feedback. 将预测结果作为输入输入网络来进行细化。多阶段训练；
-+ [18]：multi-stage pose machines 
-+ [27]：与本文架构相似，but their model ties weights in the bottom-up and top-down portions of computation as well as across iterations. 
++ [3]：使用Iterative Error Feedback. 将预测结果作为输入输入网络来进行细化。多阶段训练；
++ [2]：multi-stage pose machines 
++ [4]：与本文架构相似，but their model ties weights in the bottom-up and top-down portions of computation as well as across iterations. 
 
 >  intermediate supervision有什么优点？
 
-[15]使用级联使定位更加精确。但是对于由于遮挡或者misattributed limbs 而造成的错误，仅仅细化局部位置并不能提升性能。需要整体的信息。
+[1]使用级联使定位更加精确。但是对于由于遮挡或者misattributed limbs 而造成的错误，仅仅细化局部位置并不能提升性能。需要整体的信息。
 
 > 本文在这方面做了什么努力？
 >
@@ -145,9 +145,15 @@ For FLIC, distance is normalized by torso size, and for MPII, by a fraction of t
   + 关节不可见但它的位置能根据上下文看出来（数据集中会给出该关节的标注）
   + 没有该关节的信息（数据集中不标注）
 
+# Reference
 
+[1] Tompson, J.J., Jain, A., LeCun, Y., Bregler, C.: Joint training of a convolutional network and a graphical model for human pose estimation. In: Advances in Neural Information Processing Systems. (2014) 1799-1807 
 
+[2] Wei, S.E., Ramakrishna, V., Kanade, T., Sheikh, Y.: Convolutional pose machines. Computer Vision and Pattern Recognition (CVPR), 2016 IEEE Conference on (2016) 
 
+[3] Carreira, J., Agrawal, P., Fragkiadaki, K., Malik, J.: Human pose estimation with iterative error feedback. Computer Vision and Pattern Recognition (CVPR), 2016 IEEE Conference on (2016) 
+
+[4] Hu, P., Ramanan, D.: Bottom-up and top-down reasoning with hierarchical rectified gaussians. In: Computer Vision and Pattern Recognition (CVPR), 2016 IEEE Conference on, IEEE (2016) 
 
 
 
