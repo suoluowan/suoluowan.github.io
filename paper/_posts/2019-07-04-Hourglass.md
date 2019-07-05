@@ -20,6 +20,9 @@ categories: [paper]
 
 > 直观的挑战
 
+4. 不同的关节点可能在不同的特征图上有最好的识别精度
+5.  关节之间的关系有助于更好地定位
+
 The network captures and consolidates information across all scales of the image.
 
 > 多尺度特征？
@@ -35,14 +38,20 @@ Like many convolutional approaches that produce pixel-wise outputs, the hourglas
 On the other hand, the hourglass differs from prior designs primarily in its more symmetric topology. 
 
 > 对称的拓扑结构会带来什么好处吗？
+>
+> 直接进行很大的上采样得到的结果不够精细，对图像的细节不敏感；使用对称结构，将上采样结果与特征结合，一方面能够融合多尺度特征，另一方面能够细化结果？
 
 We expand on a single hourglass by consecutively placing multiple hourglass modules together end-to-end. This allows for repeated bottom-up, top-down inference across scales. 
 
 > 这种 repeated bottom-up, top-down inference会带来什么好处？
+>
+> 堆叠的hourglass可以探索关节点之间的关系，功能相当于图模型
 
 In conjunction with the use of intermediate supervision, repeated bidirectional inference is critical to the network’s final performance.
 
 >  intermediate supervision？repeated bidirectional inference？
+>
+>  可以解决由于网络过深而造成的梯度消失问题
 
 **本文的贡献：**
 
@@ -120,6 +129,19 @@ Metric: PCK. reports the percentage of detections that fall within a normalized 
 For FLIC, distance is normalized by torso size, and for MPII, by a fraction of the head size (referred to as PCKh). 
 
 ## Ablation Experiments
+
++ stacked hourglass design 
+
+证明性能的提升不是由于网络更深 $\rightarrow$减少hourglass数目的同时，每个hourglass增加残差模块的数目
+
++ intermediate supervision 
+
+# Further Analysis
+
++ Multiple People：overlap
++ Occlusion
+  + 关节不可见但它的位置能根据上下文看出来（数据集中会给出该关节的标注）
+  + 没有该关节的信息（数据集中不标注）
 
 
 
