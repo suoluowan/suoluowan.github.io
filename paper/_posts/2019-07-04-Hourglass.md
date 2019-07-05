@@ -23,6 +23,8 @@ categories: [paper]
 4. 不同的关节点可能在不同的特征图上有最好的识别精度
 5.  关节之间的关系有助于更好地定位
 
+> 本文针对的问题
+
 The network captures and consolidates information across all scales of the image.
 
 > 多尺度特征？
