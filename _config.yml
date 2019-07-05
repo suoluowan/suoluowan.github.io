@@ -14,8 +14,6 @@ url:                   https://suoluowan.github.io/
 # e.g. `/hydejack`.
 baseurl:               ''
 
-# Latex support
-markdown: kramdown
 # Language of your content in 2-letter code, e.g.: en, de.
 # You may also provide a location, e.g.: en-us, de_AT.
 lang:                  en
