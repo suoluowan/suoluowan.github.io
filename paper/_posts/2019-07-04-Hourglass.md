@@ -6,6 +6,20 @@ date:   2019-07-04
 categories: [paper]
 ---
 
+```html
+<head>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [['$','$']]
+            }
+        });
+    </script>
+</head>
+```
+
 目前单人姿态估计，主流算法是基于Hourglass各种更改结构的算法。
 
 [源代码](http://www-personal.umich.edu/~alnewell/pose )
