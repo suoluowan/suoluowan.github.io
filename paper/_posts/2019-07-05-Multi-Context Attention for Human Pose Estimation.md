@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Realtime Multi-Person 2D Pose Estimation using Part Affinity Fields"
+title:  "Multi-Context Attention for Human Pose Estimation"
 subtitle: "CVPR 2017"
 date:   2019-07-05 
 categories: [paper]
