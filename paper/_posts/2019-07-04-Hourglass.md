@@ -138,8 +138,6 @@ For FLIC, distance is normalized by torso size, and for MPII, by a fraction of t
 
 + intermediate supervision 
 
-$$a_2$$
-
 # Further Analysis
 
 + Multiple People：overlap
