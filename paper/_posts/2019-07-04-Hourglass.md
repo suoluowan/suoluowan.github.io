@@ -103,6 +103,8 @@ fully convolutional networks and holistically-nested architectures are both heav
 
 如何融合多尺度特征：use a single pipeline with skip layers to preserve spatial information at each resolution 
 
+每个hourglass之后，使用1x1卷积生成一些列heatmap.
+
 ![hourglass](https://github.com/suoluowan/learngit/blob/master/images/1562231671583.png?raw=true)
 
 ## Layer Implementation
