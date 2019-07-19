@@ -83,8 +83,7 @@ $$l_{xy} = (gx-\hat{gx})^2+(gy-\hat{gy})^2$$
 
 同一水平线上的行人大小相似$\rightarrow$ 乘法违反这个发现的$\hat{g}$
 
-•让$g_{ij}=(gx_{ij},gy_{ij},gw_{ij},gh_{ij})$记做特征图上ij处的伪gt。先计算一条窄带(
-row :i−1:i+1; column: 1:W)中的所有Box的宽/高的均值和标准差，W为特征图宽度，统计如下:
+让$g_{ij}=(gx_{ij},gy_{ij},gw_{ij},gh_{ij})$记做特征图上ij处的伪gt。先计算一条窄带(row :i−1:i+1; column: 1:W)中的所有Box的宽/高的均值和标准差，W为特征图宽度，统计如下:
 
 $$\mu w_i = \frac{1}{|G_i|}\sum_{mn\in G_i}gw_{mn}$$
 
