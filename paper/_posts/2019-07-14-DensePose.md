@@ -121,3 +121,88 @@ dp_mask {
 
 > The dense estimates of patch indices and coordinates in the UV space for the specified bounding box are stored in `uv_shape` and `uv_data` fields. 
 
+[13] Dense Regression (DenseReg) system 
+
+# DensePose-RCNN
+
+We develop cascaded extensions of DensePose-RCNN that further improve accuracy and describe a training-based interpolation method that allows us to turn a sparse supervision signal into a denser and more effective variant. 
+
+1. 分类像素是属于背景还是parts，并粗糙估计坐标
+2. 回归准确坐标
+
+坐标回归：
+
+$$c^* = argmax_cP(c|i), [U,V]=R^{c^*}(i)$$
+
+> P是分类器，R是回归器
+
+## Region-based Dense Pose Regression 
+
+At the top of this branch we have the same classification and regression losses as in the FCN baseline, but we now use a supervision signal that is cropped within the proposed region 
+
+> ???
+
+## Multi-task cascaded architectures 
+
+利用了关键点信息和实例分割
+
+> 直接把keypoint输入1x1卷积提特征加到densepose分支上就可以了？
+>
+> keypoint对这个网络的贡献大吗？
+>
+> 只提升了不到一个百分点
+
+![DP1](https://github.com/suoluowan/learngit/blob/master/images/DP1.png?raw=true)
+
+## Distillation-based ground-truth interpolation 
+
+Even though we aim at dense pose estimation at test time, in every training sample we annotate only a sparse subset of the pixels, approximately 100-150 per human. 
+
+For this we adopt a learning-based approach where we firstly train a “teacher” network (depicted in Fig. 9) to reconstruct the ground-truth values wherever these are observed, and then deploy it on the full image domain, yielding a dense supervision signal. 
+
+> 从稀疏到稠密，应该包含采样点之间的关系
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
