@@ -1,8 +1,8 @@
 ---
 layout: post
-title: densepose安装
+title: densepos installation
 noindex: true
 ---
 
-https://github.com/Johnqczhang/densepose_installation
+[link]: https://github.com/Johnqczhang/densepose_installation	"densepose"
 
